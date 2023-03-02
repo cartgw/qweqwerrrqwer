@@ -285,7 +285,7 @@ border-radius: 0px 0px 4px 4px;
     url(../img/hero.png);
 }
 
-button {
+.herobutton {
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -358,6 +358,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-self: center;
+	
 
   list-style: none;
   fill: #afb1b8;
@@ -475,4 +476,45 @@ address{
 }
 .footerlist-container{
 	display: inline-block;
+}
+
+
+
+
+
+
+/* Portfolio */
+
+.radiobutton{
+	display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 20px 25px;
+  min-width: 73px;
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6px;
+
+	text-align: center;
+	letter-spacing: 0.03em;
+
+
+	margin: 117px 8px 50px 0px;
+}
+
+.radiobutton:hover,
+.radiobutton:focus {
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.radiobutton:active{
+	box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.radio-list{
+	display: flex;
+	justify-content: center;
 }
