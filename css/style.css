@@ -570,3 +570,36 @@ color: #212121;
 .all-works{
 	margin-bottom: 94px;
 }
+
+.relative {
+	position:relative;
+	overflow: hidden;
+
+}
+
+
+
+.relative:hover > .image-overlay{
+	transform: translatey(0);
+}
+.image-overlay{
+	position: absolute;
+	width: 370px;
+	height: 294px;
+top: 0;
+left: 0;
+	background-color:rgba(33, 150, 243, 0.9);
+color: #FFFFFF;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.55;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+padding: 64px 24px;
+text-align: left;
+transform: translatey(-100%);
+  transition: transform 500ms ease;
+}
+.works-links{
+	text-decoration: none;
+}
