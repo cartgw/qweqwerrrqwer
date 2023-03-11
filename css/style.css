@@ -45,6 +45,10 @@ p {
   margin: 0;
 }
 
+img{
+	display: block;
+}
+
 /*header*/
 .logo {
   font-family: "Raleway", sans-serif;
@@ -80,7 +84,8 @@ p {
 }
 .site-nav .link:hover {
   color: var(--accent-color);
-
+  /* border-bottom: solid 4px #2196f3;
+  border-radius: 2px; */
 }
 .activelink {
   position: relative;
@@ -318,6 +323,7 @@ h3 .title {
 }
 
 .herobutton {
+	cursor: pointer;
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -653,17 +659,16 @@ address {
 }
 .our-works-thumb {
   position: relative;
-	width: 370;
-	height: 294;
+	/* width: 370;
+	height: 294; */
 }
 .our-works-description {
-  content: "";
   position: absolute;
   display: flex;
 
   justify-content: center;
   align-items: center;
-  bottom: 3px;;
+  bottom: 0px;;
   right: 0;
   width: 100%;
   height: 70px;
