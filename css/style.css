@@ -76,12 +76,11 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  border-bottom: solid 4px #ffffff;
+ 
 }
 .site-nav .link:hover {
   color: var(--accent-color);
-  /* border-bottom: solid 4px #2196f3;
-  border-radius: 2px; */
+
 }
 .activelink {
   position: relative;
