@@ -87,7 +87,7 @@ p {
   position: relative;
   overflow: hidden;
 }
-.site-nav .link:hover::after {
+.site-nav .activelink::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -231,7 +231,7 @@ h3 .title {
 }
 .works-list .item + .item {
   padding-left: 30px;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .title-works {
   margin-bottom: 50px;
@@ -606,16 +606,36 @@ address {
   bottom: 0px;
   right: 0px;
   background-color: rgba(33, 150, 243, 0.9);
-  color: #ffffff;
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.text-overlay {
+
+	position: absolute;
+	content: "";
+	color: #ffffff;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  padding: 64px 24px 64px 24px;
+  padding: 60px 24px 64px 24px;
   text-align: left;
-  transform: translatey(100%);
+	transform: translatey(0%);
   transition: transform 250ms ease;
 }
+
+
+.hovercard:hover .text-overlay {
+  transform: translatey(-102%);
+	
+}
+
+
+
+
+
+
 
 .works-links {
   text-decoration: none;
@@ -627,6 +647,8 @@ address {
 
 .our-works-thumb {
   position: relative;
+	width: 370;
+	height: 294;
 }
 .our-works-description {
   content: "";
