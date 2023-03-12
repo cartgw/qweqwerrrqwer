@@ -66,7 +66,25 @@
       <div class="overlay">
         <section class="hero">
           <h1 class="hero-title">Ефективні рішення <br />для вашого бізнесу</h1>
-         <button class="herobutton" type="button">Замовити послугу</button>
+         <button data-open-modal class="herobutton" type="button" >Замовити послугу</button>
+				<div class="backdrop is-hidden" data-backdrop>
+				 <div class="modal">
+					<form name="order" autocomplete="on" novalidate>
+<label>	
+<input class="form-field" type="text" name="Ім'я"></label>
+<label>	
+	<input class="form-field" type="phone" name="Телефон"></label>
+	<label>	
+		<input class="form-field" type="email" name="Пошта" ></label>
+		<label> 
+		<textarea type="text" name="Коментар"></textarea></label>
+		<label>
+		<input type="checkbox">Погоджуюся з розсилкою та приймаю Умови договору</label>
+		<button class="sumbit-button" type="submit">Відправити</button>
+					
+</form>
+					<button data-close-modal>Закрыть</button>
+				 </div></div>
         </section>
       </div>
 
@@ -377,5 +395,25 @@
         </div>
       </div>
     </footer>
+		<script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        console.log("Это клик в бекдроп");
+      }
+    </script>
   </body>
 </html>

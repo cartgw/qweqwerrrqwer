@@ -716,3 +716,83 @@ animation-delay: 100ms, 200ms;
 	
 
 }
+.overlay{
+
+
+animation-name: hero-gradient;
+animation-duration: 250ms;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+}
+
+
+
+.backdrop{
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.2);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.backdrop.is-hidden{
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal{
+	position: absolute;
+height: 581px;
+width: 528px;
+top: 50%;
+left: 50%;
+border-radius: 4px;
+background-color: #ffffff;
+transform: translate(-50%, -50%);
+z-index: 999999999999;
+
+padding: 40px;
+}
+
+
+
+
+
+
+.sumbit-button{
+	cursor: pointer;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 52px;
+  min-width: 200px;
+	min-height: 50px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ 
+}
+.submit-button:active{
+  box-shadow: inset -4px -4px 6px rgba(0, 0, 0, 0.1),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+form{
+	display: flex;
+	
+	flex-direction: column;
+}
+
+.form-field{
+
+	border: 1px solid #2196f3;
+	height: 40px;
+width: 448px;
+margin-bottom: 10px;
+	
+}
