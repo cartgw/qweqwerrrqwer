@@ -845,6 +845,7 @@ color: #212121;
 .accept-text{
 	font-weight: 400;
 font-size: 14px;
+padding-left: 20px;
 
 letter-spacing: 0.03em;
 
@@ -852,6 +853,7 @@ color: #757575;
 }
 
 .form-field-checkbox{
+	position: relative;
 	display: inline-block;
 margin-top: 20px;
 }
@@ -906,7 +908,7 @@ padding: 5px;
 }
 
 
-.checkbox{
+.checkbox-hidden{
 	position: absolute;
   width: 1px;
   height: 1px;
@@ -915,4 +917,32 @@ padding: 5px;
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+	
+}
+
+
+
+.checkbox-icon{
+	display: inline-flex;
+	position: absolute;
+	left: -2px;
+	bottom: 1px;
+	width: 16px;
+	height: 15px;
+	border: 2px solid black;
+	border-radius: 2px;
+
+
+	
+}
+
+
+.checkbox-hidden:checked + .checkbox-icon{
+	background-color: #2196F3;
+	background-image: url(../img/icon-check.svg);
+	background-size:contain;
+	
+	border-color: #2196F3;
+
+	transition: linear 250ms;
 }
