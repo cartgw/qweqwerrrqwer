@@ -69,18 +69,31 @@
          <button data-open-modal class="herobutton" type="button" >Замовити послугу</button>
 				<div class="backdrop is-hidden" data-backdrop>
 				 <div class="modal">
-					<form name="order" autocomplete="on" novalidate>
+					<form class="form js-speaker-form" autocomplete="on" novalidate>
 						<h3 class="form-title">Залиште свої дані, ми вам передзвонимо</h3>
-<label>	Ім'я
-<input class="form-field" type="text" name="Ім'я"></label>
-<label>	Телефон
-	<input class="form-field" type="phone" name="Телефон"></label>
-	<label>	Пошта
-		<input class="form-field" type="email" name="Пошта" ></label>
-		<label> Коментар
-		<textarea class="form-comment" type="text" name="Коментар"></textarea></label>
-		<label class="checkbox">
-		<input  type="checkbox"><span class="accept-text">Погоджуюся з розсилкою та приймаю</span> <a href="#" class="contract">Умови договору</a></label>
+<p class="form-field">
+<label for="name">Ім'я</label>
+<input class="form-field-border" type="text" name="name" id="name"></label>
+</p>
+<p class="form-field">
+<label for="phone">	Телефон</label>
+	<input class="form-field-border" type="phone" name="phone" id="phone"></label>
+</p>
+<p class="form-field">
+	<label for="email">	Пошта</label>
+		<input class="form-field-border" type="email" name="email"  id="email"></label>
+	
+</p>
+	<p class="form-field">
+	<label for="form-comment">Коментар</label>
+		<textarea class="form-comment" id="form-comment" type="text" name="comment" placeholder="Введіть текст"></textarea></label>
+	</p>
+
+	<p class="form-field-checkbox">
+		<input id="checkbox" type="checkbox" name="checkbox"><span class="accept-text">
+		<label for="checkbox"	class="checkbox">Погоджуюся з розсилкою та приймаю</span> <a href="#" class="contract">Умови договору</a></label></p>
+		
+		
 		<button class="sumbit-button" type="submit">Відправити</button>
 					
 </form>
