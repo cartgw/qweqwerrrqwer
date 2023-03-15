@@ -695,21 +695,23 @@ address {
 
 .herobutton{
 animation-name: button-gradient;
-animation-duration: 4000ms;
+animation-duration: 1500ms;
 animation-iteration-count: infinite;
 animation-direction: alternate;
 animation-delay: 100ms, 200ms;
+
+
 }
 
 @keyframes button-gradient {
 	from {
-		rotate: -2deg;
+		
 		background-color: #2196f3;
 
 	}
 	to{ 
-		rotate: 2deg;
-		background-color:#000000 ;
+		
+		background-color:#367edb ;
 	
 	
 	}
