@@ -70,16 +70,17 @@
 				<div class="backdrop is-hidden" data-backdrop>
 				 <div class="modal">
 					<form name="order" autocomplete="on" novalidate>
-<label>	
+						<h3 class="form-title">Залиште свої дані, ми вам передзвонимо</h3>
+<label>	Ім'я
 <input class="form-field" type="text" name="Ім'я"></label>
-<label>	
+<label>	Телефон
 	<input class="form-field" type="phone" name="Телефон"></label>
-	<label>	
+	<label>	Пошта
 		<input class="form-field" type="email" name="Пошта" ></label>
-		<label> 
-		<textarea type="text" name="Коментар"></textarea></label>
-		<label>
-		<input type="checkbox">Погоджуюся з розсилкою та приймаю Умови договору</label>
+		<label> Коментар
+		<textarea class="form-comment" type="text" name="Коментар"></textarea></label>
+		<label class="checkbox">
+		<input  type="checkbox"><span class="accept-text">Погоджуюся з розсилкою та приймаю</span> <a href="#" class="contract">Умови договору</a></label>
 		<button class="sumbit-button" type="submit">Відправити</button>
 					
 </form>
