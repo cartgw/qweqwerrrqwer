@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,88 +23,51 @@
     <!--Шапка сайту-->
 
     <div class="container head">
-      <header class="nav-main">
+      <header class="nav">
         <nav>
-          <a class="logo" href="./index.html"
-            ><span class="logo-blue">Web</span>Studio</a
+          <a class="nav__logo" href="./index.html"
+            ><span class="nav__logo--blue">Web</span>Studio</a
           >
-          <ul class="site-nav list">
-            <li class="item">
+          <ul class="nav-list list">
+            <li class="nav-list__item">
               <a href="./index.html" class="link activelink">Студія</a>
             </li>
-            <li class="item">
+            <li class="nav-list__item">
               <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
-            <li class="item">
+            <li class="nav-list__item">
               <a href="menu" class="link">Контакти</a>
             </li>
           </ul>
         </nav>
       </header>
-      <div class="nav-contacts">
-        <ul class="contacts-info list">
-          <li class="item">
+      
+        <ul class="header-contacts list">
+          <li class="header-contacts__item">
             <a href="mailto:info@devstudio.com" class="link">
-              <svg class="header-icons" width="16px" height="12px">
+              <svg class="header-contacts__icon" width="16px" height="12px">
                 <use href="./img/sprite.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="header-contacts__item">
             <a href="tel:+380961111111" class="link">
-              <svg class="header-icons" width="10px" height="16px">
+              <svg class="header-contacts__icon" width="10px" height="16px">
                 <use href="./img/sprite2.svg#icon-phone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
-      </div>
+      
     </div>
 
     <main>
       <!--Герой блок-->
       <div class="overlay">
         <section class="hero">
-          <h1 class="hero-title">Ефективні рішення <br />для вашого бізнесу</h1>
-         <button data-open-modal class="herobutton" type="button" >Замовити послугу</button>
-				<div class="backdrop is-hidden" data-backdrop>
-				 <div class="modal">
-					<form class="form js-speaker-form" autocomplete="on" novalidate>
-						<h3 class="form-title">Залиште свої дані, ми вам передзвонимо</h3>
-<p class="form-field">
-<label for="name">Ім'я</label>
-<input class="form-field-border" type="text" name="name" id="name"></label>
-<svg class="modal-icons" width="18px"height="18px" > <use href="./img/sprite.svg#icon-person-black"></use></svg> 
-</p>
-<p class="form-field">
-<label for="phone">	Телефон</label>
-	<input class="form-field-border" type="phone" name="phone" id="phone"></label>
-	<svg class="modal-icons" width="18px" height="18px" > <use href="./img/sprite.svg#icon-phone-black"></use></svg> 
-</p>
-<p class="form-field">
-	<label for="email">	Пошта</label>
-		<input class="form-field-border" type="email" name="email"  id="email"></label>
-	<svg class="modal-icons" width="18px"height="18px" > <use href="./img/sprite.svg#icon-email-black"></use></svg> 
-</p>
-	<p class="form-field">
-	<label for="form-comment">Коментар</label>
-		<textarea class="form-comment" id="form-comment" type="text" name="comment" placeholder="Введіть текст"></textarea></label>
-	</p>
-
-	<p class="form-field-checkbox">
-		<label  class="label-checkbox" for="checkbox"	><input class="checkbox-hidden" id="checkbox" type="checkbox" name="checkbox">
-
-			<span class="checkbox-icon"></span>
-			<span class="accept-text">Погоджуюся з розсилкою та приймаю</span> <a href="#" class="contract">Умови договору</a></label></p>
-		
-		<!-- <svg class="checkbox-icon no-active" width="16px" height="15px"><use href="./img/sprite.svg#icon-checkbox-noactive"></use></svg>
-		<svg class="checkbox-icon active" width="16px" height="15px"><use href="./img/sprite.svg#icon-icon-check"></use></svg> -->
-		<button class="sumbit-button" type="submit">Відправити</button>
-					
-</form>
-					<button class="modal-closed" data-close-modal>
-						
-						<svg class="icon-closed"  width="18px" height="18px"><use href="./img/sprite.svg#icon-close-button" ></use></svg></button>
+          <h1 class="hero__title">Ефективні рішення <br />для вашого бізнесу</h1>
+         <button data-open-modal class="hero__button" type="button" >Замовити послугу</button>
+				
 				 </div></div>
         </section>
       </div>
@@ -417,6 +380,11 @@
 
 </div>
 
+
+
+<button class="modal-closed" data-close-modal>
+						
+	<svg class="icon-closed"  width="18px" height="18px"><use href="./img/sprite.svg#icon-close-button" ></use></svg></button>
 <form class="footer-form" autocomplete="on" novalidate>
 						
 	<label class="form-group"> 
@@ -430,7 +398,41 @@
         </div>
       </div>
     </footer>
+		<div class="backdrop is-hidden" data-backdrop>
+			<div class="modal">
+			 <form class="form js-speaker-form" autocomplete="on" novalidate>
+				 <h3 class="form-title">Залиште свої дані, ми вам передзвонимо</h3>
+<p class="form-field">
+<label for="name">Ім'я</label>
+<input class="form-field-border" type="text" name="name" id="name"></label>
+<svg class="modal-icons" width="18px"height="18px" > <use href="./img/sprite.svg#icon-person-black"></use></svg> 
+</p>
+<p class="form-field">
+<label for="phone">	Телефон</label>
+<input class="form-field-border" type="phone" name="phone" id="phone"></label>
+<svg class="modal-icons" width="18px" height="18px" > <use href="./img/sprite.svg#icon-phone-black"></use></svg> 
+</p>
+<p class="form-field">
+<label for="email">	Пошта</label>
+ <input class="form-field-border" type="email" name="email"  id="email"></label>
+<svg class="modal-icons" width="18px"height="18px" > <use href="./img/sprite.svg#icon-email-black"></use></svg> 
+</p>
+<p class="form-field">
+<label for="form-comment">Коментар</label>
+ <textarea class="form-comment" id="form-comment" type="text" name="comment" placeholder="Введіть текст"></textarea></label>
+</p>
 
+<p class="form-field-checkbox">
+ <label  class="label-checkbox" for="checkbox"	><input class="checkbox-hidden" id="checkbox" type="checkbox" name="checkbox">
+
+	 <span class="checkbox-icon"></span>
+	 <span class="accept-text">Погоджуюся з розсилкою та приймаю</span> <a href="#" class="contract">Умови договору</a></label></p>
+ 
+ <!-- <svg class="checkbox-icon no-active" width="16px" height="15px"><use href="./img/sprite.svg#icon-checkbox-noactive"></use></svg>
+ <svg class="checkbox-icon active" width="16px" height="15px"><use href="./img/sprite.svg#icon-icon-check"></use></svg> -->
+ <button class="sumbit-button" type="submit">Відправити</button>
+			 
+</form>
 		<script>
       const refs = {
         openModalBtn: document.querySelector("[data-open-modal]"),
