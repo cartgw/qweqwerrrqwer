@@ -1,0 +1,11 @@
+.nav__logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 38px;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  border-bottom: solid 4px #ffffff;
+}
+
+.nav__logo--blue {
+  color: aqua;
+}/*# sourceMappingURL=main.css.map */

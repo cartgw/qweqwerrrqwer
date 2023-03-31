@@ -1,0 +1,25 @@
+
+.our-works{
+
+	&__title{
+		font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+margin-top: 94px;
+margin-bottom: 50px;
+	}
+
+&__list{
+	display: flex;
+	padding-inline-start: 0px;
+}
+
+&__item {
+  padding-left: 30px;
+}
+&__item:first-child {
+  padding-left: 0px;
+}}
+
